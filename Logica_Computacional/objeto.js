@@ -14,3 +14,4 @@ let smartphone = {
 
 console.table(smartphone);
 console.log(smartphone.ligando());
+console.log(smartphone.telefones);
