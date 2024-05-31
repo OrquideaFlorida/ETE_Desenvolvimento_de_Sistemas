@@ -17,18 +17,15 @@ while x < len(L):
 #RESOLUÇÃO
 L = []
 
-#While, para adicionar números à lista
 while True:
     n = int(input("Digite um número (0 para sair): "))
     if n == 0:
         break
     L.append(n)
 
-#For, para imprimir os elementos da lista
 x = 0
 for x in L:
     print(x)
 
 #O comando WHILE é usado quando se deseja realizar uma repetição que não tenha um limite estabelecido.
-#Por exemplo, quando você quer ficar gerando numeros aleatorios e apenas quando o numero for 948 o while vai ser interrompido.
-#Já o FOR, serve para realizar uma repetição on já sabe o limite dela.
+#Já o FOR, serve para realizar uma repetição onde já se sabe o limite dela.
