@@ -31,3 +31,4 @@ while x < 5:
     print(f"Nota{x}: {notas[x]: 6.2f}")
     x += 1
     print(f"Média: {soma / x:5.2f}")
+    # :5(total de 5 dígitos) .2f (dois dígitos após a vírgula)
