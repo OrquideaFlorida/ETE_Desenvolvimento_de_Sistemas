@@ -15,7 +15,8 @@ saboresSorv[0] = "cajá"; //Substitui  elemento do índice 0 (Coco por Cajá)
 console.log(saboresSorv);
 
 saboresSorv.splice(1, 0, "jaca", "tamarindo", "delícia de abacaxi");
-// .splice(0, 0, 0) ORDEM DAS VÍRGULAS -> Índice do Array, Quantos elementos deseja excluir, Nome do novo elemento
+// .splice(0, 0, 0) ORDEM DAS VÍRGULAS -> Índice do Array, Quantos elementos deseja excluir, 
+//Nome do novo elemento
 console.log(saboresSorv);
 
 console.log(saboresSorv.length); // "Tamanho" do Array (Quantos elementos possui o Array)
