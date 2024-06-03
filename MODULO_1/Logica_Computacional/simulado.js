@@ -13,7 +13,7 @@
 //Agora, se ele for múltiplo de 3 e 5 mostre **“FizzBuzz”**.
 function eMultiplo(numero){
     if (numero%3 == 0 && numero %5 == 0){
-        console.log("FIZZ BUZZ");
+        console.log("FIZZBUZZ");
     }else if(numero%3 == 0){
         console.log("FIZZ");
     }else if(numero %5 == 0){
@@ -29,7 +29,7 @@ eMultiplo(30);
 //Receba uma palavra pelo `console` e diga se essa palavra começa com uma vogal. 
 //Imprima **sim** ou **não** no console.
 function eVogal(palavra){
-    if (palavra ){
+    if (palavra){
         console.log("SIM!!!");
     }else{
         console.log("NÃO!!!");
@@ -88,9 +88,16 @@ oQueFazer("Segunda", "Chovendo");
 //Crie uma função que receba dois números e exiba no console uma contagem regressiva entre else,
 //contando de dois em dois números. Por exemplo: recebendo o número inicial 20 e o final 0, a função
 //deverá imprimir em sequência 20 18 16 14 12 10 8 6 4 2 0.
-for(let regressiva = 20; regressiva >= 0; regressiva -= 2){
-    console.log(regressiva);
+function contagem(comeca, termina){
+    if(comeca < termina){
+        console.log("O primeiro valor deve ser maior do que o segundo");
+    }
+    for(let regressiva = comeca; regressiva >= termina; regressiva -= 2){
+        console.log(regressiva);
+    }
 }
+contagem(50, 16);
+//--------------------------------------------------------------------------------
 
 //7
 // crie uma função que receba um número qualquer devolva o seguinte padrão como resultado
@@ -104,12 +111,23 @@ for(let regressiva = 20; regressiva >= 0; regressiva -= 2){
 // *****
 // ******
 // ```
-
+function estrelas(n1){
+    for(let cont = 1; cont <= n1; cont++ ){
+        let line = " "
+        for( let j = 0; j < cont; j++){
+            line += "*"
+        }
+        console.log(line);
+    }
+}
+estrelas(6);
+//---------------------------------------------------------------------------------------------------
 
 //8
 //Desenvolva um programa que apresente o maior e o menor valores da sequência ([54, 10, 29, 87, 7, 64])
 let qualMaior = [54, 10, 29, 87, 7, 64];
-
+console.log(Math.max(qualMaior))
+//----------------------------------------------------------------------------------------------------
 
 //9
 // Crie uma array com 7 elementos e realize as atividades a seguir: 
@@ -124,24 +142,21 @@ let elemento = ["terra", "fogo", "vento", "água", "coração", "capitão", "pla
 console.table(elemento);
 //1)
 elemento.push("com", "união", "poderes");
-//console.table(elemento);
 //2)
 elemento.splice(0, 0, "vai", "planeta!");
-//console.table(elemento);
 //3)
 elemento[5] = "O Quinto Elemento"
-//console.table(elemento);
+
 //4)
-elemento.splice(10, 2);
-//console.table(elemento);
+elemento.splice(10, 2,);
 //5)
-elemento.splice(0,1);
-//console.table(elemento);
+elemento.splice(0, 1);
 //6)
 console.table(elemento);
 //7)
 elemento[2] = "2 é Demais"
 //console.table(elemento);
+//-----------------------------------------------------------------------------------------------------
 
 //10
 //Crie uma função que peça ao usuário um número entre 0 e 100 e imprima o número 
