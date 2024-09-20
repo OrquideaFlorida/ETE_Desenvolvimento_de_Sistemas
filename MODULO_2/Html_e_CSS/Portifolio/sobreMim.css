@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cyan: #26ddf5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.sub1{
+  font-family: "Montserrat", sans-serif;
+}
+/* header {
+  height: 56px;
+  width: 126px;
+  margin-left: 362px;
+  margin-top: 43px;
+} */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: black;
+}
+main{
+  display: flex;
+  gap: 80px;
+}
+a {
+  font-size: 40px;
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  margin-right: 402PX;
+  margin-left: 300px;
+  gap: 130px;
+}
+
+.session1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 615px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 36px;
+  color: white;
+  text-align:left;
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  align-self: flex-start;
+}
+
+.h1_blue {
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--cyan);
+}
+
+.paragrafo {
+  font-size: 24px;
+  color: white;
+  font-weight: 400;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+
+.apresentacao {
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+  }
+
+
+main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 44px;
+  margin: 0px;
+}
+
+img {
+  width: 349px;
+  height: 393px;
+  border-color: blue;
+  border-radius: 10px;
+}
+
+footer {
+  height: 50px;
+  line-height: 50px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: var(--cyan);
+  font-size: 25px;
+}
+
+strong {
+  font-weight: 400;
+  font-size: 36px;
+  color: var(--cyan);
+}
+
+.links{
+  display: flex; 
+  justify-content: space-between; 
+  gap: 50px;
+
+}
+.link1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  background-color: var(--cyan);
+  border-radius: 16px;
+  padding: 21.5px 94.5px;
+  text-align: center;
+  color: black;
+  
+}
+
+@media(max-width: 1000px){
+
+    main{
+    display: flex;
+    flex-direction: column-reverse;
+    }
+    
+    }
