@@ -1,0 +1,8 @@
+:root {
+    --corPrincial:var(--corPrincial)
+}
+
+* {
+    margin: 0;
+    Padding: 0;
+}
